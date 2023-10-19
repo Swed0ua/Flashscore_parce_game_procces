@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>parser</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header__title">Flashscore parser</div>
+        </header>
+        <main>
+            <div class="input__wrapper">
+                <label for="count">Количество одновременно запущенных потоков</label>
+                <input type="number" name="count" id="count"value="1" min="1">
+            </div>
+            <!-- <div class="input__wrapper">
+                <label for="Date_start">От</label>
+                <input type="date" name="Date_start" id="Date_start" min="2017-08-01">
+            </div>
+            <div class="input__wrapper">
+                <label for="Date_end">До</label>
+                <input type="date" name="Date_end" id="Date_end" min="2017-07-31">
+            </div> -->
+            <div class="input-area__wrapper">
+                <label>Список лиг и сезонов</label>
+                <div class="input-area">
+                    loading....
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__btns">
+                <button class="footer_btn btn btn_start">Старт</button>
+                <button class="footer_btn btn btn_calendar">Календарь</button>
+                <button class="footer_btn btn btn_uncheck">Скинуть</button>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
